@@ -229,3 +229,23 @@ legend{
     width: 100%;
     display: none;
 }
+
+.fail{
+    background-color:#717171;
+    color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.cross{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.flex{
+    display: flex;
+}
