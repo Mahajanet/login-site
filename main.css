@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header, footer, section, nav {
+    display: block;
+}
+html, body {
+    height: 100%;
+}
+body {
+    font-family: "Helvetica Neue",Arial,"Liberation Sans",FreeSans,sans-serif;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #5e6062;
+    background: #ffffff;
+    margin: 10px auto 0;
+}
+a:link,
+a:visited {
+    text-decoration: none;
+    color: #717171;
+}
+img {
+    max-width: 100%;
+    margin-bottom: 12px;
+}
+
+.wrapper {
+    background: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#rice_header {
+    background-color: #ffffff;
+    background-image: url("../images/topshadow.gif");
+    background-position: left bottom;
+    background-repeat: repeat-x;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+#rice_logo {
+    float: left;
+    margin: 0;
+    padding: 10px 25px 0 10px;
+}
+
+#rice_title {
+    color: #5e6062;
+    font-size: 2em;
+    font-weight: bold;
+    padding: 25px 10px 0 20px;
+}
+
+.container {
+    position: relative;
+    left: 34%;
+    width: 550px;
+    margin-left: -270px;
+}
+.container-footer {
+    padding-top: 12px;
+}
+@media only screen and (max-width: 1020px) {
+    .container {
+        left: 45%;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .container {
+        position: static;
+        margin: 0 auto;
+        width: 280px;
+    }
+}
+
+header {
+    padding: 20px 0;
+}
+
+.logo img {
+    border: none;
+}
+@media only screen and (max-width: 650px) {
+    .logo img {
+        display: none;
+    }
+    .logo {
+        background: url(images/dummylogo-mobile.png) no-repeat top center;
+        display: block;
+        height: 115px;
+        width: 100px;
+        margin: 0 auto;
+    }
+}
+
+.content {
+    overflow: hidden;
+    margin: 10px;
+}
+
+.content p {
+    padding-top: 10px;
+}
+
+.column {
+    float: left;
+}
+.column.one {
+    width: 50%;
+    margin-right: 48px;
+}
+
+form {
+    width: 200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+form label { /* labels are hidden */
+    font-weight: bold;
+}
+form legend {
+    font-size:1em;
+    padding: 1rem;
+    margin-bottom: 12px;
+    font-family: "Helvetica Neue",Arial,"Liberation Sans",FreeSans,sans-serif;
+    border-radius: 2%;
+
+}
+.form-element-wrapper {
+    margin-bottom: 12px;
+}
+.form-element {
+    width: 100%;
+    padding: 13px 12px;
+    border: none;
+    font-size: 14px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+.form-field {
+    color: #717171;
+    border: 1px solid #B7B7B7;
+}
+.form-field-focus {
+    color: #333333;
+    border-color: #333;
+}
+.form-button {
+    background: #00246A;
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    color: #ffffff;
+    cursor: pointer;
+}
+.form-button:hover {
+    background: #FF6400;
+}
+.form-error {
+    padding: 0;
+    color: #B61601;
+}
+
+.list-help {
+    margin-top: 40px; /* offset padding on first anchor */
+    list-style: none;
+}
+.list-help-item a {
+    display: block;
+    padding: 6px 0;
+}
+.item-marker {
+    color: #be0000;
+}
+
+footer {
+    color: #00246A;
+    font-size: 11px;
+    background: #FFFFFF;
+}
+.footer-text {
+    margin-bottom: 12px;
+}
+.footer-links a:link,
+.footer-links a:visited {
+    color: #EFEFEF;
+    font-weight: bold;
+}
+.footer-links a:after {
+    content: "\00a0\00a0\00a0|\00a0\00a0";
+}
+.footer-links a.last:after {
+    content: "";
+}
+
+
+legend{
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    z-index: 2;
+}
+
+.emphasisDiv {
+    transition: transform 0.2s;
+}
+
+/* Apply styles on hover to create the emphasis effect */
+.emphasisDiv:hover {
+    transform: scale(1.1); /* Scale the div up by 10% */
+}
+
+.prompt{
+    color: #00246A;
+}
+
+.prompt-heading{
+    color: #00246A;
+    font-weight: bold;
+}
+
+
+#info{
+    background-color: #e3e8ee;
+    width: 100%;
+    display: none;
+}

